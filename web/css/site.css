@@ -1,0 +1,295 @@
+html,
+body {
+    height: 100%;
+    font-size: 95%;
+    background-color: #efeee5;
+    /*background-color: #f5f5f5;*/
+    /*background-color: #979797;*/
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+.navbar {
+    background: #2a5d84;
+    /*
+    background: #1f3b08;
+    background: -moz-linear-gradient(top, #1f3b08 0%, #1f3b08 49%, #1f3b08 49%, #1f3b08 49%, #627d4d 100%);
+    background: -webkit-linear-gradient(top, #1f3b08 0%,#1f3b08 49%,#1f3b08 49%,#1f3b08 49%,#627d4d 100%);
+    background: linear-gradient(to bottom, #1f3b08 0%,#1f3b08 49%,#1f3b08 49%,#1f3b08 49%,#627d4d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f3b08', endColorstr='#627d4d',GradientType=0 );
+    margin-bottom: 0px !important; */
+}
+.panel .panel-heading {
+    background: #2a5d84;
+    border-radius: 0;
+    /*
+    background: #1f3b08;
+    background: -moz-linear-gradient(top, #1f3b08 0%, #1f3b08 49%, #1f3b08 49%, #1f3b08 49%, #627d4d 100%);
+    background: -webkit-linear-gradient(top, #1f3b08 0%,#1f3b08 49%,#1f3b08 49%,#1f3b08 49%,#627d4d 100%);
+    background: linear-gradient(to bottom, #1f3b08 0%,#1f3b08 49%,#1f3b08 49%,#1f3b08 49%,#627d4d 100%);
+    */
+}
+.panel .panel-body {
+    color: #0b3454;
+    /* color: #003300;*/
+    /*color: #730000;*/
+    /*color: #224f77;*/
+}
+.panel .panel-body ul li a {
+    color: #0b3454;
+    /* color: #003300;*/
+    /*color: #730000;*/
+    /*color: #224f77;*/
+}
+.panel .panel-body ul li a:link {
+    text-decoration: none;
+    color: #0b3454;
+    /* color: #003300;*/
+    /*color: #730000;*/
+    /*color: #224f77;*/
+}
+.panel .panel-body ul li a:hover {
+    font-weight: bold;
+    /*background-color: #2a98ed;*/
+    /*background-color: #00e64d;*/
+    /*color: #730000;*/
+    /*color: #224f77;*/
+}
+.navbar li a {
+    color: #ffffff;
+}
+.navbar .dropdown ul li a {
+    /*color: #428bca;*/
+    /*color: #CC0000;*/
+    /*color: #003300;*/
+    color: #0b3454;
+}
+.navbar .dropdown ul li a:hover {
+    font-weight: bold;
+}
+.navbar .dropdown ul li a:visited {
+    /*background-color: #2a98ed;*/
+    /*background-color: #00e64d;*/
+}
+.navbar li a:hover {
+    color: #0b3454;
+    /*color: #CC0000;*/
+    /*color: #003300;*/
+    /*color: #a90329;*/
+}
+.navbar-header a {
+    color: #ffffff;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.carousel{
+    background: #2f4357;
+    margin-top: -18px;
+    padding: 0;
+}
+.carousel .item{
+    min-height: 200px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.img-responsive {
+    margin: 0 auto;
+}
+#index-context {
+    margin-top: 5px;
+}
+.indiamap {
+    display: relative;
+    font-size: larger;
+}
+.indiamap #mark-chennai {
+    position: absolute;
+    top: 342px;
+    left: 448px;
+    color: black;
+}
+.indiamap #mark-baroda {
+    position: absolute;
+    top: 222px;
+    left: 368px;
+    color: black;
+}
+.indiamap #mark-mumbai {
+    position: absolute;
+    top: 275px;
+    left: 352px;
+    color: black;
+}
+.indiamap #mark-jorhat {
+    position: absolute;
+    top: 177px;
+    left: 597px;
+    color: black;
+}
+.indiamap #mark-kolkata {
+    position: absolute;
+    top: 231px;
+    left: 538px;
+    color: black;
+}
+.indiamap #mark-dehradun {
+    position: absolute;
+    top: 140px;
+    left: 440px;
+    color: black;
+}
+.carousel-caption {
+    top: auto;
+    bottom: 0;
+    font-size: xx-large;
+}
+#manpower {
+    /*text-align: left;*/
+}
+#piechart {
+    display: inline-block;
+    margin: 0 auto;
+}
+.panel {
+    margin: 1px;
+}
+.nopadding-left {
+    padding-left: 2px !important;
+    margin: 0 !important;
+}
+.nopadding-right {
+    padding-right: 2px !important;
+    margin: 0 !important;
+}
+#gs_targets .carousel {
+    margin: auto;
+    width: 60%;
+}
+.custom {
+    min-height: 500px;
+}
+.panel-primary {
+    border-radius: 0;
+    border-color: #33521b;
+}
+.panel-heading {
+    font-weight: bold;
+}
+.blink {
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0.0; }
+}
