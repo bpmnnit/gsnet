@@ -23,151 +23,118 @@ use yii\web\View;
                 </div>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        Status of safety and technical audits (February 2017):
+                        Status of safety and technical audits (June 2017):
                     </div>
                     <div class="panel-body">
-                        <p><h4><strong>Number of Observations/Complied/Pending - Safety Audit:</strong></h4></p>
+                        <!--<p><h4><strong>Number of Observations/Complied/Pending - Safety Audit:</strong></h4></p>-->
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="table table-bordered table-striped">
                                 <thead>
-                                <tr>
-                                    <th>Work Centre</th>
-                                    <th>No. of Obs./Para</th>
-                                    <th>Observations Complied</th>
-                                    <th>Pending</th>
-                                </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th colspan="3"><h4><strong>Safety Audit</strong></h4></th>
+                                        <th colspan="3"><h4><strong>Technical Audit</strong></h4></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Work Centre</th>
+                                        <th>No. of obs./para</th>
+                                        <th>Observations Complied</th>
+                                        <th>Pending</th>
+                                        <th>No. of obs./ para</th>
+                                        <th>Observations Complied</th>
+                                        <th>Pending</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Chennai</td><td>--</td><td>--</td><td>--</td>
+                                        <td>Chennai</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
                                     </tr>
                                     <tr>
-                                        <td>Dehradun</td><td>6</td><td>Nil</td><td>6</td>
+                                        <td>Dehradun</td><td>2</td><td>--</td><td>2</td><td>--</td><td>--</td><td>--</td>
                                     </tr>
                                     <tr>
-                                        <td>Jorhat</td><td>--</td><td>--</td><td>--</td>
+                                        <td>Jorhat</td><td>--</td><td>--</td><td>--</td><td>1</td><td>1</td><td>--</td>
                                     </tr>
                                     <tr>
-                                        <td>Kolkata</td><td>--</td><td>--</td><td>--</td>
+                                        <td>Kolkata</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
                                     </tr>
                                     <tr>
-                                        <td>Mumbai</td><td>--</td><td>--</td><td>--</td>
+                                        <td>Mumbai</td><td>19</td><td>3</td><td>16</td><td>16</td><td>3</td><td>13</td>
                                     </tr>
                                     <tr>
-                                        <td>Vadodara</td><td>--</td><td>--</td><td>--</td>
+                                        <td>Vadodara</td><td>20</td><td>20</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CGS Office</td><td>--</td><td>--</td><td>--</td><td>5</td><td>5</td><td>--</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <hr>
-                        <p><h4><strong>Number of Observations/Complied/Pending - Technical Audit:</strong></h4></p>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Accidents: 2016-17 &amp; 2017-18
+                    </div>
+                    <div class="panel-body">
+                        <!--<p><h4><strong>Number of Observations/Complied/Pending - Safety Audit:</strong></h4></p>-->
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
+                                    <th></th>
+                                    <th colspan="2">Near Miss</th>
+                                    <th colspan="2">Minor</th>
+                                    <th colspan="2">Major</th>
+                                    <th colspan="2">Fatal</th>
+                                </tr>
+                                <tr>
                                     <th>Work Centre</th>
-                                    <th>No. of Obs./Para</th>
-                                    <th>Observations Complied</th>
-                                    <th>Pending</th>
+                                    <th>2016-17</th>
+                                    <th>2017-18</th>
+                                    <th>2016-17</th>
+                                    <th>2017-18</th>
+                                    <th>2016-17</th>
+                                    <th>2017-18</th>
+                                    <th>2016-17</th>
+                                    <th>2017-18</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Chennai</td><td>2</td><td>--</td><td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dehradun</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jorhat</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kolkata</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mumbai</td><td>10</td><td>--</td><td>10</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vadodara</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <hr>
-                        <h4><strong>Accidents (2016-17)</strong></h4>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
                                 <tr>
-                                    <th>Work Centre</th>
-                                    <th>Near Miss</th>
-                                    <th>Minor</th>
-                                    <th>Major</th>
-                                    <th>Fatal</th>
+                                    <td>Chennai</td><td>20</td><td>1</td><td>1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
                                 </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Chennai</td><td>18</td><td>1</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dehradun</td><td>--</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jorhat</td><td>--</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kolkata</td><td>5</td><td>--</td><td>--</td><td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mumbai</td><td>--</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vadodara</td><td>2</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <hr>
-                        <h4><strong>Accidents (2015-16)</strong></h4>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
                                 <tr>
-                                    <th>Work Centre</th>
-                                    <th>Near Miss</th>
-                                    <th>Minor</th>
-                                    <th>Major</th>
-                                    <th>Fatal</th>
+                                    <td>Dehradun</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
                                 </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Chennai</td><td>17</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dehradun</td><td>--</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jorhat</td><td>--</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kolkata</td><td>3</td><td>--</td><td>1</td><td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mumbai</td><td>--</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vadodara</td><td>6</td><td>--</td><td>--</td><td>--</td>
-                                    </tr>
+                                <tr>
+                                    <td>Jorhat</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>Kolkata</td><td>5</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>1</td><td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>Mumbai</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>Vadodara</td><td>2</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total</strong></td><td><strong>27</strong></td><td><strong>1</strong></td><td><strong>1</strong></td><td><strong>--</strong></td><td><strong>--</strong></td><td><strong>--</strong></td><td><strong>1</strong></td><td><strong>--</strong></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <hr>
-                        <h3><strong>Details of HSE Units:</strong></h3>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Details of HSE Units
+                    </div>
+                    <div class="panel-body">
                         <h4><strong>Mumbai</strong></h4>
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>Role</th>
@@ -180,12 +147,6 @@ use yii\web\View;
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Party Chief (GP-23)</td><td></td><td><td><td></td><td></td><td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>MR</td><td></td><td></td><td></td><td></td><td></td>
-                                    </tr>
-                                    <tr>
                                         <td>Safety Officer</td><td>A Dakshinamurthy</td><td>DGM(E&T)</td><td>022 2748 6506</td><td>022 2745 5054</td><td>9969224433</td>
                                     </tr>
                                 </tbody>
@@ -194,7 +155,7 @@ use yii\web\View;
                         <hr>
                         <h4><strong>Kolkata</strong></h4>
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>Role</th>
@@ -221,7 +182,7 @@ use yii\web\View;
                         <hr>
                         <h4><strong>Vadodara</strong></h4>
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>Role</th>
@@ -248,7 +209,7 @@ use yii\web\View;
                                     <tr>
                                         <td>Safety Officer</td><td>Mihir Pathak</td><td>TA Gd III-Geophy (S)</td><td></td><td></td><td>9428828420</td>
                                     </tr>
-                                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td colspan="6"></td></tr>
                                     <tr>
                                         <td>Party Chief (GP-06)-MA</td><td>T.K.Prasad</td><td>DGM(GP)-Party Chief</td><td></td><td></td><td>9428007361</td>
                                     </tr>
@@ -264,11 +225,11 @@ use yii\web\View;
                                     <tr>
                                         <td>Safety Officer</td><td>Mayur Trivedi</td><td>TA Gd III-Geophy (S)</td><td></td><td></td><td>9428828434</td>
                                     </tr>
-                                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td colspan="6"></td></tr>
                                     <tr>
                                         <td>Party Chief (GP-15) MA,MR & Safety Officer</td><td>K.V.G.K.Rao</td><td>CG(S)-Party Chief</td><td></td><td></td><td>9428007425</td>
                                     </tr>
-                                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td colspan="6"></td></tr>
                                     <tr>
                                         <td>Party Chief (GP-16)-MA</td><td>Amit Agarwal</td><td>CG(S)-Party Chief</td><td></td><td></td><td>9428007415</td>
                                     </tr>
@@ -281,7 +242,7 @@ use yii\web\View;
                                     <tr>
                                         <td>Safety Officer</td><td>M A Rathwa</td><td>J T A(Survey)</td><td></td><td></td><td></td>
                                     </tr>
-                                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td colspan="6"></td></tr>
                                     <tr>
                                         <td>Party Chief (GP-26)</td><td>Ashok Kumar</td><td>CG(S)-Party Chief</td><td></td><td></td><td>9428007427</td>
                                     </tr>
@@ -297,7 +258,7 @@ use yii\web\View;
                                     <tr>
                                         <td>Safety Officer</td><td>S P Nirala</td><td>EE(Mechanical)</td><td></td><td></td><td>9428007172</td>
                                     </tr>
-                                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td colspan="6"></td></tr>
                                     <tr>
                                         <td>Party Chief (GP-61)-MA</td><td>R.B.Singh</td><td>DGM(GP)-Party Chief</td><td></td><td></td><td>9428007437</td>
                                     </tr>
@@ -313,7 +274,7 @@ use yii\web\View;
                                     <tr>
                                         <td>Safety Officer</td><td>R.K.Mandal</td><td>EE(Mech)</td><td></td><td></td><td>9428828185</td>
                                     </tr>
-                                    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td colspan="6"></td></tr>
                                     <tr>
                                         <td>Party Chief (GP-81)</td><td>H N Garg</td><td>DGM(GP)-Party Chief</td><td></td><td></td><td>9428007532</td>
                                     </tr>
@@ -332,6 +293,19 @@ use yii\web\View;
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        HSE Policy
+                    </div>
+                    <div class="panel-body">
+                        <br>
+                        <?= Html::img('images/hse/hse-policy.png', array('height' => '570', 'width' => '1070', 'class' => 'img-responsive')); ?>
                     </div>
                 </div>
             </div>

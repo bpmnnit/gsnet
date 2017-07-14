@@ -116,7 +116,7 @@ function drawChart1() {
         pieSliceText: 'value',
         fontSize: 12,
         chartArea: { top:0, width:'100%', height:'75%' },
-        legend: { position: 'left', textStyle: { color: 'blue', fontSize: 12 }, alignment: 'center', maxLines: 2}
+        legend: { position: 'left', textStyle: { color: 'blue', fontSize: 14 }, alignment: 'center', maxLines: 2}
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
@@ -150,7 +150,7 @@ function drawChart2() {
         pieSliceText: 'value',
         fontSize: 11,
         chartArea: { top:0, width:'100%', height:'75%' },
-        legend: { position: 'left', textStyle: { color: 'blue', fontSize: 12 }, alignment: 'center', maxLines: 2},
+        legend: { position: 'left', textStyle: { color: 'blue', fontSize: 14 }, alignment: 'center', maxLines: 2},
         pieSliceTextStyle: {fontSize: 9}
     };
 

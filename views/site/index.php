@@ -65,6 +65,7 @@ use yii\web\View;
                             <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;Book of Delegated Powers, 2015 (Updated upto 5th June, 2017)', 'docs/BDPUpd 05.06.2017.pdf', ['target' => '_blank']) ?></li>
                             <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;BDP Amendment No. 2/2017 (BDP 2015)', 'docs/BDP_Amendmnt_2.pdf', ['target' => '_blank']) ?></li>
                             <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;Integrated Materials Management Manual (Updated upto 13th April 2016)', 'docs/Integrated MM Manual updated upto 13_04_2016.pdf', ['target' => '_blank']) ?></li>
+                            <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;Officer Order: Reporting and Investigation of Incidents/Accidents', 'docs/Reporting & Investigation of Incidents, Accidents.pdf', ['target' => '_blank']) ?></li>
                         </ul>
                     </div>
                 </div>

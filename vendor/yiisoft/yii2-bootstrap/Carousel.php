@@ -42,7 +42,7 @@ class Carousel extends Widget
      * @var array|boolean the labels for the previous and the next control buttons.
      * If false, it means the previous and the next control buttons should not be displayed.
      */
-    public $controls = ['&lsaquo;', '&rsaquo;'];
+    public $controls = ['<span class="glyphicon glyphicon-chevron-left">', '<span class="glyphicon glyphicon-chevron-right">'];
     /**
      * @var boolean
      * If false carousel indicators (<ol> tag with anchors to items) should not be displayed.

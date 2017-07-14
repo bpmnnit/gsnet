@@ -194,8 +194,10 @@ a.desc:after {
 }
 .carousel{
     background: #2f4357;
-    margin-top: -18px;
     padding: 0;
+}
+.carousel-control {
+    width: 10%;
 }
 .carousel .item{
     min-height: 200px; /* Prevent carousel from being distorted if for some reason image doesn't load */
@@ -284,7 +286,8 @@ a.desc:after {
     border-color: #33521b;
 }
 .panel-heading {
-    font-weight: bold;
+    /*font-weight: bold;*/
+    font-size: larger;
 }
 .blink {
     animation: blinker 2s linear infinite;
@@ -292,4 +295,7 @@ a.desc:after {
 
 @keyframes blinker {
     50% { opacity: 0.0; }
+}
+.site-index {
+    margin-top: -18px;
 }
