@@ -33,16 +33,25 @@ use yii\web\View;
                         Menu
                     </div>
                     <div class="panel-body" id="menu">
-                        <p class="text-justify">
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="#" id="ln_news">News &amp; Notices</a></li>
-                            <li><a href="#" id="ln_role">Role of GS</a></li>
-                            <li><a href="#" id="ln_manpower">Manpower</a></li>
-                            <li><a href="#" id="ln_organogram">Organogram</a></li>
-                            <li><a href="#" id="ln_locations">Locations</a></li>
-                            <li><a href="#" id="ln_targets">Targets</a></li>
-                            <li><a href="#" id="ln_contacts">Contact Us</a></li>
-                        </ul>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; width: 180px;">
+                                <li><a tabindex="-1" href="#" id="ln_news"><span>News &amp; Notices</span></a></li>
+                                <li><a tabindex="-1" href="#" id="ln_role"><span>Role of GS</span></a></li>
+                                <li><a tabindex="-1" href="#" id="ln_manpower"><span>Manpower</span></a></li>
+                                <li><a tabindex="-1" href="#" id="ln_organogram"><span>Organogram</span></a></li>
+                                <li><a tabindex="-1" href="#" id="ln_locations"><span>Locations</span></a></li>
+                                <li><a tabindex="-1" href="#" id="ln_targets"><span>Targets</span></a></li>
+                                <li><a tabindex="-1" href="#" id="ln_contacts"><span>Contact Us</span></a></li>
+                                <li class="dropdown-submenu"><a tabindex="-1" href="#"><span>Important Links</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="http://reports.ongc.co.in/" target="_blank"><span>ONGC Reports</span></a></li>
+                                        <li><a tabindex="-1" href="https://mail.ongc.co.in/webredir.nsf" target="_blank"><span>ONGC Mail</span></a></li>
+                                        <li><a tabindex="-1" href="https://webice.ongc.co.in/" target="_blank"><span>Webice</span></a></li>
+                                        <li><a tabindex="-1" href="https://disha.ongc.co.in/ProcessPortal/login.jsp" target="_blank"><span>Disha</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
