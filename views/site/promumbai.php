@@ -14,7 +14,7 @@ use yii\bootstrap\Carousel;
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">Processing Centre: Mumbai - SPIC</div>
+                    <div class="panel-heading">Processing Centre, Mumbai (SPIC)</div>
                     <div class="panel-body">
                         <p class="text-justify">Located in the picturesque Panvel region of Navi Mumbai, <strong>SPIC(Seismic Processing &amp; Interpretation Centre)</strong> is the premier Seismic Data Processing Centre of ONGC. Founded in 1987, SPIC is responsible for the introduction of various cutting edge technologies in the seismic processing domain in ONGC. The scientific manpower at SPIC is highly trained and motivated. Continual technology upgrades has enables SPIC to maintain its leadership in the organisation.</p>
                         <p><h3><strong>Computer Resources:</strong></h3>

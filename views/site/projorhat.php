@@ -14,7 +14,7 @@ use yii\bootstrap\Carousel;
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">Processing Centre: Jorhat</div>
+                    <div class="panel-heading">Processing Centre, Jorhat</div>
                     <div class="panel-body">
                         <p class="text-justify"><strong>RCC Jorhat</strong> is the premier Seismic Data processing hub that caters to the North-Eastern part of India and particular to Assam and Assam-Arakan Basin (The Upper Assam Shelf also called NAS, Lower Assam Shelf also known as SAS and the Fold Belts). It was felt that the data acquired in the region should be processed and quality checked in the region itself. That is how RCC (Jorhat) came into existence in 1988-89. The centre is also a <strong>9001:2008 QMS</strong> and <strong>27001:2013 ISMS Certified.</strong></p>
                         <h3>Highlights of RCC Jorhat: Resources Available(2017-18)</h3>
@@ -22,7 +22,7 @@ use yii\bootstrap\Carousel;
                         <p class="text-justify">Total 21(16 Geoscientists + 4 System Engineers)</p>
                         <h4>Hardware:</h4>
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>System</th>
@@ -60,7 +60,7 @@ use yii\bootstrap\Carousel;
                         </div>
                         <h4>Application Software:</h4>
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>System</th>

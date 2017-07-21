@@ -14,7 +14,7 @@ use yii\bootstrap\Carousel;
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">Processing Centre: Vadodara</div>
+                    <div class="panel-heading">Processing Centre, Vadodara</div>
                     <div class="panel-body">
                         <p class="text-justify">RCC Vadodara, established in 1987, is one of the centers which caters to the exploratory needs of the Western Onshore Basin by way of seismic data, time and depth processing including 2D, 3D, Multi Component, AVO/Inversion VSP etc. To meet the high compute need and apply pre-stack time and depth migration of 3D data, state-of-art <strong>"High Performace Cluster (HPCC) System"</strong> was inducted with the CGG Geo-cluster software in 2008 to have the feature for time/depth imaging and multi component processing. The RCC Data Center operates on 24x7 basis to meet the needs of Western Onshore Basin.</p>
                         <!--<button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#processing-more">Read more</button>-->

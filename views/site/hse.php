@@ -15,10 +15,13 @@ use yii\web\View;
             <div class="col-lg-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        HSE Organogram
+                        Health, Safety &amp; Environment <span style="font-size:large; cursor:pointer; float: right;" onclick="openNav()">&#9776; HSE Menu</span>
                     </div>
                     <div class="panel-body">
-                        <?= Html::img('images/HSE-Organogram.jpg', array('class' => 'img-responsive')); ?>
+                        <p class="text-justify"><strong>HSE Policy:</strong> Exploration and production of hydrocarbon involves risk and close interaction with surrounding environment. To safeguard the working and surrounding environment, ONGC has adopted a well defined HSE policy focusing on Occupational Health, Safe Operation and control of pollution.</p>
+                        <?= Html::img('images/hse/hse-flowchart.jpg', array('class' => 'img-responsive text-center', 'width' => '400', 'height' => '400')); ?>
+                        <p class="text-justify"><strong>ISO certified:</strong> All the installations of ONGC have an integrated management System based on requirements of ISO 9001, OHSAS 18001 and ISO 14001 and certified by third party. The integrated management system is in place since 2004. All operating facilities were certified to ISO 9001 since 2004-05. All working units have third party certified integrated QHSE Management System.</p>
+                        <p class="text-justify"><?= Html::a('Read more on ONGC Website...', 'http://www.ongcindia.com/wps/wcm/connect/ongcindia/Home/Initiatives/HSE/', array('target' => '_blank', 'style' => 'text-decoration: none;')); ?></p>
                     </div>
                 </div>
                 <div class="panel panel-primary">
@@ -102,7 +105,7 @@ use yii\web\View;
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Chennai</td><td>20</td><td>1</td><td>1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+                                    <td>Chennai</td><td>20</td><td>4</td><td>1</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
                                 </tr>
                                 <tr>
                                     <td>Dehradun</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
@@ -168,7 +171,7 @@ use yii\web\View;
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Party Chief (GP-23)</td><td>S K Ghosal</td><td>CG (S)</td><td>033 2340 3217</td><td></td><td>9643301726</td>
+                                        <td>Party Chief (GP-17)</td><td>S K Ghosal</td><td>CG (S)</td><td>033 2340 3217</td><td></td><td>9643301726</td>
                                     </tr>
                                     <tr>
                                         <td>MR</td><td>G S Das</td><td>CG (S)</td><td>033 2340 3217</td><td></td><td>9432020209</td>
@@ -297,40 +300,70 @@ use yii\web\View;
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        HSE Policy
+        <div id="mySidenav" class="sidenav">
+            <?= Html::a('&times;', 'javascript:void(0)', array('class' => 'closebtn', 'onclick' => 'closeNav()')); ?>
+            <?= Html::a('HSE Policy', '#', array('data-toggle' => 'modal', 'data-target' => '#hsePolicy')); ?>
+            <?= Html::a('HSE Rules', '#', array('data-toggle' => 'modal', 'data-target' => '#hseRules')); ?>
+            <?= Html::a('HSE Organogram', '#', array('data-toggle' => 'modal', 'data-target' => '#hseOrg')); ?>
+            <?= Html::a('Corporate HSE', 'http://chse.ongc.co.in/index.asp', array('target' => '_blank')); ?>
+            <?= Html::a('Sectoral HSE', 'http://10.208.131.20', array('target' => '_blank')); ?>
+        </div>
+        <div id="hsePolicy" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">HSE Policy</h4>
                     </div>
-                    <div class="panel-body">
-                        <br>
-                        <?= Html::img('images/hse/hse-policy.png', array('height' => '570', 'width' => '1070', 'class' => 'img-responsive')); ?>
+                    <div class="modal-body">
+                        <?= Html::img('images/hse/hse-policy.png', array('class' => 'img-responsive')); ?>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        HSE Rules
+        <div id="hseOrg" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">HSE Organogram</h4>
                     </div>
-                    <div class="panel-body">
-                        <br>
+                    <div class="modal-body">
+                        <?= Html::img('images/HSE-Organogram.jpg', array('class' => 'img-responsive')); ?>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hseRules" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">HSE Rules</h4>
+                    </div>
+                    <div class="modal-body">
                         <?php
                         echo Carousel::widget([
                             'items' => [
-                                ['content'=>  Html::img('images/hse/hse-1.png', array('height' => '570', 'width' => '1070', 'class' => 'img-responsive'))],
-                                ['content'=>  Html::img('images/hse/hse-2.png', array('height' => '570', 'width' => '1070', 'class' => 'img-responsive'))],
-                                ['content'=>  Html::img('images/hse/hse-3.png', array('height' => '570', 'width' => '1070', 'class' => 'img-responsive'))],
-                                ['content'=>  Html::img('images/hse/hse-4.png', array('height' => '570', 'width' => '1070', 'class' => 'img-responsive'))],
-                                ['content'=>  Html::img('images/hse/hse-5.png', array('height' => '570', 'width' => '1070', 'class' => 'img-responsive'))],
-                                ['content'=>  Html::img('images/hse/hse-6.png', array('height' => '570', 'width' => '1070', 'class' => 'img-responsive'))],
-                                ['content'=>  Html::img('images/hse/hse-7.png', array('height' => '570', 'width' => '1070', 'class' => 'img-responsive'))],
+                                ['content'=>  Html::img('images/hse/rule-1.png', array('class' => 'img-responsive'))],
+                                ['content'=>  Html::img('images/hse/rule-2.png', array('class' => 'img-responsive'))],
+                                ['content'=>  Html::img('images/hse/rule-3.png', array('class' => 'img-responsive'))],
+                                ['content'=>  Html::img('images/hse/rule-4.png', array('class' => 'img-responsive'))],
+                                ['content'=>  Html::img('images/hse/rule-5.png', array('class' => 'img-responsive'))],
+                                ['content'=>  Html::img('images/hse/rule-6.png', array('class' => 'img-responsive'))],
+                                ['content'=>  Html::img('images/hse/rule-7.png', array('class' => 'img-responsive'))],
                             ]
                         ]);
                         ?>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
