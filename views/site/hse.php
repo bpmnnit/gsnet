@@ -171,7 +171,7 @@ use yii\web\View;
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Party Chief (GP-17)</td><td>S K Ghosal</td><td>CG (S)</td><td>033 2340 3217</td><td></td><td>9643301726</td>
+                                        <td><strong>Party Chief (GP-17)</strong></td><td>S K Ghosal</td><td>CG (S)</td><td>033 2340 3217</td><td></td><td>9643301726</td>
                                     </tr>
                                     <tr>
                                         <td>MR</td><td>G S Das</td><td>CG (S)</td><td>033 2340 3217</td><td></td><td>9432020209</td>
@@ -198,7 +198,7 @@ use yii\web\View;
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Party Chief (GP-03)-MA</td><td>A.K.Sahoo</td><td>DGM-Party Chief</td><td></td><td></td><td>9428007404</td>
+                                        <td><strong>Party Chief(GP-03)-MA</strong></td><td>A.K.Sahoo</td><td>DGM-Party Chief</td><td></td><td></td><td>9428007404</td>
                                     </tr>
                                     <tr>
                                         <td>MR</td><td>Rajanarayan P</td><td>Dy.S.G(S)</td><td></td><td></td><td>9428007317</td>
@@ -214,7 +214,7 @@ use yii\web\View;
                                     </tr>
                                     <tr><td colspan="6"></td></tr>
                                     <tr>
-                                        <td>Party Chief (GP-06)-MA</td><td>T.K.Prasad</td><td>DGM(GP)-Party Chief</td><td></td><td></td><td>9428007361</td>
+                                        <td><strong>Party Chief (GP-06)-MA</strong></td><td>T.K.Prasad</td><td>DGM(GP)-Party Chief</td><td></td><td></td><td>9428007361</td>
                                     </tr>
                                     <tr>
                                         <td>MR</td><td>A Raghvender</td><td>Sr. Geophysicist(S)</td><td></td><td></td><td>9428007295</td>
@@ -230,11 +230,11 @@ use yii\web\View;
                                     </tr>
                                     <tr><td colspan="6"></td></tr>
                                     <tr>
-                                        <td>Party Chief (GP-15) MA,MR & Safety Officer</td><td>K.V.G.K.Rao</td><td>CG(S)-Party Chief</td><td></td><td></td><td>9428007425</td>
+                                        <td><strong>Party Chief (GP-15) MA,MR &amp; Safety Officer</strong></td><td>K.V.G.K.Rao</td><td>CG(S)-Party Chief</td><td></td><td></td><td>9428007425</td>
                                     </tr>
                                     <tr><td colspan="6"></td></tr>
                                     <tr>
-                                        <td>Party Chief (GP-16)-MA</td><td>Amit Agarwal</td><td>CG(S)-Party Chief</td><td></td><td></td><td>9428007415</td>
+                                        <td><strong>Party Chief (GP-16)-MA</strong></td><td>Amit Agarwal</td><td>CG(S)-Party Chief</td><td></td><td></td><td>9428007415</td>
                                     </tr>
                                     <tr>
                                         <td>MR</td><td>Kirit P Patel</td><td>Tech Astt Gd-III</td><td></td><td></td><td>9428007390</td>
@@ -247,7 +247,7 @@ use yii\web\View;
                                     </tr>
                                     <tr><td colspan="6"></td></tr>
                                     <tr>
-                                        <td>Party Chief (GP-26)</td><td>Ashok Kumar</td><td>CG(S)-Party Chief</td><td></td><td></td><td>9428007427</td>
+                                        <td><strong>Party Chief (GP-26)</strong></td><td>Ashok Kumar</td><td>CG(S)-Party Chief</td><td></td><td></td><td>9428007427</td>
                                     </tr>
                                     <tr>
                                         <td>MR</td><td>Pradeep Kumar</td><td>Sr. Geophysicist (S)</td><td></td><td></td><td>9428828489</td>
@@ -263,7 +263,7 @@ use yii\web\View;
                                     </tr>
                                     <tr><td colspan="6"></td></tr>
                                     <tr>
-                                        <td>Party Chief (GP-61)-MA</td><td>R.B.Singh</td><td>DGM(GP)-Party Chief</td><td></td><td></td><td>9428007437</td>
+                                        <td><strong>Party Chief (GP-61)-MA</strong></td><td>R.B.Singh</td><td>DGM(GP)-Party Chief</td><td></td><td></td><td>9428007437</td>
                                     </tr>
                                     <tr>
                                         <td>MR</td><td>S.K.Srivastava</td><td>Sr. Geophysicist (S)</td><td></td><td></td><td>9428828454</td>
@@ -279,7 +279,7 @@ use yii\web\View;
                                     </tr>
                                     <tr><td colspan="6"></td></tr>
                                     <tr>
-                                        <td>Party Chief (GP-81)</td><td>H N Garg</td><td>DGM(GP)-Party Chief</td><td></td><td></td><td>9428007532</td>
+                                        <td><strong>Party Chief (GP-81)</strong></td><td>H N Garg</td><td>DGM(GP)-Party Chief</td><td></td><td></td><td>9428007532</td>
                                     </tr>
                                     <tr>
                                         <td>MR</td><td>Anoop Padmanabhan</td><td>Geophysicist (S)</td><td></td><td></td><td>9428007749</td>
@@ -312,7 +312,7 @@ use yii\web\View;
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close" data-dismiss="modal"<span class="glyphicon glyphicon-remove"></span>/button>
                         <h4 class="modal-title">HSE Policy</h4>
                     </div>
                     <div class="modal-body">
@@ -328,7 +328,7 @@ use yii\web\View;
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close" data-dismiss="modal"<span class="glyphicon glyphicon-remove"></span>/button>
                         <h4 class="modal-title">HSE Organogram</h4>
                     </div>
                     <div class="modal-body">
@@ -344,7 +344,7 @@ use yii\web\View;
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close" data-dismiss="modal"<span class="glyphicon glyphicon-remove"></span>/button>
                         <h4 class="modal-title">HSE Rules</h4>
                     </div>
                     <div class="modal-body">

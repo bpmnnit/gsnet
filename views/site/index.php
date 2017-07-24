@@ -36,6 +36,7 @@ use yii\web\View;
                         <div class="dropdown">
                             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; width: 180px;">
                                 <li><a tabindex="-1" href="#" id="ln_news"><span>News &amp; Notices</span></a></li>
+                                <li><a tabindex="-1" href="#" id="ln_docs"><span>Frequently Used Docs</span></a></li>
                                 <li><a tabindex="-1" href="#" id="ln_role"><span>Role of GS</span></a></li>
                                 <li><a tabindex="-1" href="#" id="ln_manpower"><span>Manpower</span></a></li>
                                 <li><a tabindex="-1" href="#" id="ln_organogram"><span>Organogram</span></a></li>
@@ -62,19 +63,14 @@ use yii\web\View;
                     </div>
                     <div class="panel-body">
                         <ul>
-                            <li>FS 2016-17, Acquistion BE target over achieved.</li>
-                            <li>All the Processing Centres achieved their Annual Targets.</li>
+                            <li><?= Html::a('FS 2016-17, Acquistion BE target over achieved.', '#', array('data-toggle' => 'modal', 'data-target' => '#modalAcquisition')); ?></li>
+                            <li><?= Html::a('All the Processing Centres achieved their Annual Targets.', '#', array('data-toggle' => 'modal', 'data-target' => '#modalProcessing')); ?></li>
                             <li>Targets of Q1, FY 2017-18 also achieved.</li>
                             <li>All parties have demobilzed.</li>
                             <li>Process for procurement of seven new data acquisition system underway.</li>
                             <li>PO placed for new HPCC system for up-gradation of processing centres.</li>
                             <li>Software modules ES-360, OMEGA installed at SPIC Mumbai.</li>
                             <li>FTG Survey by AGG method carried out in Cachar, Mizoram and Galecki area of A&amp;A Basin and in block KG- -- of KG Basin.</li>
-                            <hr>
-                            <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;Book of Delegated Powers, 2015 (Updated upto 5th June, 2017)', 'docs/BDPUpd 05.06.2017.pdf', ['target' => '_blank']) ?></li>
-                            <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;BDP Amendment No. 2/2017 (BDP 2015)', 'docs/BDP_Amendmnt_2.pdf', ['target' => '_blank']) ?></li>
-                            <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;Integrated Materials Management Manual (Updated upto 13th April 2016)', 'docs/Integrated MM Manual updated upto 13_04_2016.pdf', ['target' => '_blank']) ?></li>
-                            <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;Officer Order: Reporting and Investigation of Incidents/Accidents', 'docs/Reporting & Investigation of Incidents, Accidents.pdf', ['target' => '_blank']) ?></li>
                         </ul>
                     </div>
                 </div>
@@ -88,7 +84,7 @@ use yii\web\View;
                         $this->registerJs('google.charts.load("current", {"packages":["corechart"]});');
                         $this->registerJs('google.charts.setOnLoadCallback(drawChart1);');
                         ?>
-                        <p>Region Wise Manpower Distribution:</p>
+                        <p>Region Wise Manpower Distribution (as on 6 July 2017):</p>
                         <div id="piechart1"></div>
                         <hr>
                         <?php
@@ -105,9 +101,10 @@ use yii\web\View;
                         Organogram
                     </div>
                     <div class="panel-body">
-                        <?= Html::img('images/cgs-org.png', array('class' => 'img-responsive', 'usemap' => '#modalmum')); ?>
-                        <map name="modalmum">
+                        <?= Html::img('images/cgs-org.png', array('class' => 'img-responsive', 'usemap' => '#modalHgs')); ?>
+                        <map name="modalHgs">
                             <area shape="rect" coords="0,235,127,287" alt="Modal HGS" data-toggle="modal" data-target="#mumHgs">
+                            <area shape="rect" coords="700,235,827,287" alt="Modal HGS" data-toggle="modal" data-target="#kolHgs">
                         </map>
                     </div>
                 </div>
@@ -129,6 +126,20 @@ use yii\web\View;
                             <li>Capturing of external opportunities & Coordinate with outside agencies for smooth functioning of the operations.</li>
                             <li>Coordination for planning, job rotation, training and development of human resource.</li>
                             <li>Implementation of policies and guidelines to improve effectiveness.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-primary custom" id="gs_docs">
+                    <div class="panel-heading">
+                        Important Documents
+                    </div>
+                    <div class="panel-body">
+                        <p class="text-justify">
+                        <ul>
+                            <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;Book of Delegated Powers, 2015 (Updated upto 5th June, 2017)', 'docs/BDPUpd 05.06.2017.pdf', ['target' => '_blank']) ?></li>
+                            <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;BDP Amendment No. 2/2017 (BDP 2015)', 'docs/BDP_Amendmnt_2.pdf', ['target' => '_blank']) ?></li>
+                            <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;Integrated Materials Management Manual (Updated upto 13th April 2016)', 'docs/Integrated MM Manual updated upto 13_04_2016.pdf', ['target' => '_blank']) ?></li>
+                            <li><?= Html::a('<span class="glyphicon glyphicon glyphicon-file"></span>&nbsp;Officer Order: Reporting and Investigation of Incidents/Accidents', 'docs/Reporting & Investigation of Incidents, Accidents.pdf', ['target' => '_blank']) ?></li>
                         </ul>
                     </div>
                 </div>
@@ -231,7 +242,7 @@ use yii\web\View;
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
                         <h4 class="modal-title">HGS Organogram</h4>
                     </div>
                     <div class="modal-body">
@@ -242,6 +253,67 @@ use yii\web\View;
                     </div>
                 </div>
 
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="kolHgs" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h4 class="modal-title">GPS Kolkata Organogram</h4>
+                    </div>
+                    <div class="modal-body">
+                        <?= Html::img('images/kol-org.png', array('class' => 'img-responsive')); ?>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="modalAcquisition" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h3 class="modal-title">Acquisition</h3>
+                    </div>
+                    <div class="modal-body">
+                        <?php
+                        echo Carousel::widget([
+                            'items' => [
+                                ['content'=>  Html::img('images/p-1.jpg', array('class' => 'img-responsive'))],
+                                ['content'=>  Html::img('images/p-2.jpg', array('class' => 'img-responsive'))],
+                            ]
+                        ]);
+                        ?>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="modalProcessing" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                        <h3 class="modal-title">Processing</h3>
+                    </div>
+                    <div class="modal-body">
+                        <?= Html::img('images/p-3.jpg', ['class' => 'img-responsive']) ?>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

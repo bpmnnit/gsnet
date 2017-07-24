@@ -12,6 +12,7 @@ $(document).ready(function(){
         interval: 3000
     });
 
+    $("#gs_docs").hide();
     $("#gs_manpower").hide();
     $("#gs_organogram").hide();
     $("#gs_role").hide();
@@ -27,6 +28,7 @@ $(document).ready(function(){
         $("#gs_locations").hide();
         $("#gs_targets").hide();
         $("#gs_contacts").hide();
+        $("#gs_docs").hide();
     });
     $("#ln_manpower").click(function() {
         $("#gs_manpower").show();
@@ -36,6 +38,7 @@ $(document).ready(function(){
         $("#gs_locations").hide();
         $("#gs_targets").hide();
         $("#gs_contacts").hide();
+        $("#gs_docs").hide();
     });
     $("#ln_organogram").click(function() {
         $("#gs_manpower").hide();
@@ -45,6 +48,7 @@ $(document).ready(function(){
         $("#gs_locations").hide();
         $("#gs_targets").hide();
         $("#gs_contacts").hide();
+        $("#gs_docs").hide();
     });
     $("#ln_role").click(function() {
         $("#gs_manpower").hide();
@@ -54,6 +58,7 @@ $(document).ready(function(){
         $("#gs_locations").hide();
         $("#gs_targets").hide();
         $("#gs_contacts").hide();
+        $("#gs_docs").hide();
     });
     $("#ln_activity").click(function() {
         $("#gs_manpower").hide();
@@ -63,6 +68,7 @@ $(document).ready(function(){
         $("#gs_locations").hide();
         $("#gs_targets").hide();
         $("#gs_contacts").hide();
+        $("#gs_docs").hide();
     });
     $("#ln_locations").click(function() {
         $("#gs_manpower").hide();
@@ -72,6 +78,7 @@ $(document).ready(function(){
         $("#gs_locations").show();
         $("#gs_targets").hide();
         $("#gs_contacts").hide();
+        $("#gs_docs").hide();
     });
     $("#ln_targets").click(function() {
         $("#gs_manpower").hide();
@@ -81,6 +88,7 @@ $(document).ready(function(){
         $("#gs_locations").hide();
         $("#gs_targets").show();
         $("#gs_contacts").hide();
+        $("#gs_docs").hide();
     });
     $("#ln_contacts").click(function() {
         $("#gs_manpower").hide();
@@ -90,6 +98,17 @@ $(document).ready(function(){
         $("#gs_locations").hide();
         $("#gs_targets").hide();
         $("#gs_contacts").show();
+        $("#gs_docs").hide();
+    });
+    $("#ln_docs").click(function() {
+        $("#gs_manpower").hide();
+        $("#gs_role").hide();
+        $("#gs_organogram").hide();
+        $("#gs_news").hide();
+        $("#gs_locations").hide();
+        $("#gs_targets").hide();
+        $("#gs_contacts").hide();
+        $("#gs_docs").show();
     });
 });
 
@@ -100,19 +119,22 @@ function drawChart1() {
 
     var data = google.visualization.arrayToDataTable([
         ['Region', 'No. of People'],
-        ['Vadodara', 222],
-        ['Chennai', 152],
-        ['Kolkata', 57],
-        ['Jorhat', 164],
-        ['Dehradun', 37],
-        ['CGS/MAP', 20]
+        ['Vadodara', 204],
+        ['Chennai', 133],
+        ['Kolkata', 45],
+        ['Jorhat', 138],
+        ['Dehradun', 42],
+        ['MAP', 13],
+        ['Mumbai', 65],
+        ['CGS', 9],
+        ['GEOPIC Proc.', 29]
     ]);
 
     var options = {
         title: '',
         width: 600,
         height: 400,
-        is3D: true,
+        is3D: false,
         pieSliceText: 'value',
         fontSize: 12,
         chartArea: { top:0, width:'100%', height:'75%' },
@@ -146,7 +168,7 @@ function drawChart2() {
         title: '',
         width: 600,
         height: 400,
-        is3D: true,
+        is3D: false,
         pieSliceText: 'value',
         fontSize: 11,
         chartArea: { top:0, width:'100%', height:'75%' },

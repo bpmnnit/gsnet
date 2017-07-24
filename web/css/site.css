@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    font-size: 95%;
+    font-size: 100%;
     background-color: #efeee5;
     /*background-color: #f5f5f5;*/
     /*background-color: #979797;*/
@@ -221,7 +221,7 @@ a.desc:after {
 }
 .indiamap #mark-chennai {
     position: absolute;
-    top: 342px;
+    top: 332px;
     left: 448px;
     color: black;
 }
@@ -233,25 +233,25 @@ a.desc:after {
 }
 .indiamap #mark-mumbai {
     position: absolute;
-    top: 275px;
+    top: 270px;
     left: 352px;
     color: black;
 }
 .indiamap #mark-jorhat {
     position: absolute;
-    top: 177px;
+    top: 172px;
     left: 597px;
     color: black;
 }
 .indiamap #mark-kolkata {
     position: absolute;
-    top: 231px;
+    top: 226px;
     left: 538px;
     color: black;
 }
 .indiamap #mark-dehradun {
     position: absolute;
-    top: 140px;
+    top: 135px;
     left: 440px;
     color: black;
 }
